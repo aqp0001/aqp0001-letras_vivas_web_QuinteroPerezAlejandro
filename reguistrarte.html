@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de reguistro</title>
+    <link rel="stylesheet" href="./css/reguistrarte.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2 class="form-title">Regístrate</h2>
+        <form id="registrationForm" class="space-y-4">
+            <div class="form-group">
+                <label for="fullName">Nombre completo</label>
+                <input type="text" id="fullName" name="fullName" required class="input-field">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required class="input-field">
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required minlength="8" class="input-field">
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirma Contraseña</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" class="input-field">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">
+                    Regístrate
+                </button>
+            </div>
+            <a href="./iniciar_sesion.html" class="text-indigo-600 hover:underline">¿Ya tienes cuenta?</a>
+        </form>
+        <div id="registrationMessage" class="mt-4 text-center hidden"></div>
+    </div>
+</body>
+</html>

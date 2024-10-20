@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario tarjeta de crédito</title>
+    <link rel="stylesheet" href="./css/pagar.css">
+</head>
+<body>
+    <header>
+        <img src="Imagenes/Logotipo.png" alt="" width="100px" >
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="sala_estudiante.html">Sala del estudiante</a></li>
+                <li><a href="dia_lector.html">Día lector</a></li>
+            </ul>
+        </nav>
+        <div class="user-cart">
+            <a href="iniciar_sesion.html">
+                <img src="Imagenes/iniciar_sesion_boton.png" width="150px">
+            </a>
+            <a href="carrito.html">
+                <img src="Imagenes/carrito_compra.png" width="80px">
+            </a>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <h2 class="title">Información de la tarjeta de crédito</h2>
+        <form id="creditCardForm" class="form">
+            <div class="form-group">
+                <label for="cardNumber">Número de tarjeta</label>
+                <input type="text" id="cardNumber" name="cardNumber" required placeholder="1234 5678 9012 3456">
+            </div>
+            <div class="form-group">
+                <label for="expirationMonth">Mes de expiración</label>
+                <select id="expirationMonth" name="expirationMonth" required>
+                    <option value="">MM</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="expirationYear">Año de expiración</label>
+                <select id="expirationYear" name="expirationYear" required>
+                    <option value="">YYYY</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required placeholder="123">
+            </div>
+            <button type="submit" class="submit-button">Enviar pago</button>
+        </form>
+        <div id="paymentMessage" class="payment-message hidden"></div>
+    </div>
+
+    <footer>
+        <p>© 2024 - 2023 Letras Vivas</p>
+        <p>Enlaces: <a href="index.html">Inicio</a>, <a href="catalogo.html">Catálogo</a>, <a href="dia_lector.html">Día lector</a>, <a href="sala_estudiante.html">Sala del estudiante</a></p>
+        <p>Teléfono: 745249617 | Email: letrasvivas@gmail.com | Dirección: Calle Montalbán 1, 28014 Madrid</p>
+        <div class="redes-sociales">
+            <p>Redes sociales: 
+                <a href="">
+                    <img src="Imagenes/instagram.png" width="30">
+                </a>
+                <a href="">
+                    <img src="Imagenes/facebook.png" width="30">
+                </a>
+                <a href="">
+                    <img src="Imagenes/whatsapp.png" width="30">
+                </a>
+                <a href="">
+                    <img src="Imagenes/twiter.png" width="30">
+                </a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

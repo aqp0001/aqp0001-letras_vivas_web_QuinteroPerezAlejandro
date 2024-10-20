@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo libros</title>
+    <link rel="stylesheet" href="./css/catalogo.css">
+</head>
+
+<body>
+    <header>
+        <img src="Imagenes/Logotipo.png" alt="" width="100px" >
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="sala_estudiante.html">Sala del estudiante</a></li>
+                <li><a href="dia_lector.html">Día lector</a></li>
+            </ul>
+        </nav>
+        <div class="user-cart">
+            <a href="iniciar_sesion.html">
+                <img src="Imagenes/iniciar_sesion_boton.png" width="150px">
+            </a>
+            <a href="carrito.html">
+                <img src="Imagenes/carrito_compra.png" width="80px">
+            </a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Buscar Libro</h2>
+        <form action="buscar_libro.php" method="GET">
+            <label for="nombre">Nombre del libro:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre del libro">
+
+            <label for="genero">Género:</label>
+            <input type="text" id="genero" name="genero" placeholder="Género del libro">
+
+            <label for="editorial">Editorial:</label>
+            <input type="text" id="editorial" name="editorial" placeholder="Editorial del libro">
+
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" name="autor" placeholder="Autor del libro">
+
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 - 2023 Letras Vivas</p>
+        <p>Enlaces: <a href="index.html">Inicio</a>, <a href="catalogo.html">Catálogo</a>, <a href="dia_lector.html">Día lector</a>, <a href="sala_estudiante.html">Sala del estudiante</a></p>
+        <p>Teléfono: 745249617 | Email: letrasvivas@gmail.com | Dirección: Calle Montalbán 1, 28014 Madrid</p>
+        <div class="redes-sociales">
+            <p>Redes sociales: 
+                <a href="">
+                    <img src="Imagenes/instagram.png" width="30">
+                </a>
+                <a href="">
+                    <img src="Imagenes/facebook.png" width="30">
+                </a>
+                <a href="">
+                    <img src="Imagenes/whatsapp.png" width="30">
+                </a>
+                <a href="">
+                    <img src="Imagenes/twiter.png" width="30">
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
