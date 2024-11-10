@@ -118,6 +118,54 @@ button:hover {
     }
 }
 
+#servicios {
+    max-width: 1200px; /* Limita el ancho máximo en pantallas grandes */
+    width: calc(100% - 40px); /* Ancho completo menos 20px de margen en cada lado */
+    padding: 20px;
+    margin: 20px auto; /* Centrado en la pantalla */
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333; 
+}
+
+.reserva-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reserva-imagen img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.reserva-detalles {
+    margin-right: 300px;
+}
+
+.reserva-tiempo {
+    margin-right: 50px;
+    margin-bottom: 200px;
+    white-space: nowrap; 
+}
+
+
+.btn-formulario {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+
 
 footer {
     background-color: #3b3b3b;
