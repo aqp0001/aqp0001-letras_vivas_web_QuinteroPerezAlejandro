@@ -137,6 +137,16 @@ section::after {
     max-width: 40%;
 }
 
+.video-izquierda {
+    float: left; 
+    margin-right: 10px; 
+    margin-bottom: 10px;
+    max-width: 60%;
+    width: 100%; 
+    height: auto; 
+  }
+  
+
 .imagen-derecha {
     float: right;
     margin-left: 10px;
