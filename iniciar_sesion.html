@@ -3,46 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario iniciar sesion</title>
+    <title>Formulario Iniciar Sesión</title>
     
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-
     <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
-    <link rel="stylesheet" href="./css/iniciar_sesion.css">
-    <link rel="icon" href="Imagenes/Logotipo.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-image: url('../Imagenes/iniciar_sesion.png');
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-color: #f3f4f6;
+        }
+    </style>
 </head>
 <body>
 
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-    <link rel="stylesheet" href="./iniciar_sesion.css">
-</head>
-<body>
-    <div class="login-container">
-        <h2 class="form-title">Inicia sesión</h2>
-        <form id="loginForm" class="space-y-4">
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required class="input-field">
-            </div>
-            <div class="form-group">
-                <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" required class="input-field">
-            </div>
-            <div class="form-group">
-                <button type="submit" class="submit-btn">
-                    Iniciar sesión
-                </button>
-            </div>
-            <a href="./reguistrarte.html" class="text-indigo-600 hover:underline">¿Aún no tienes cuenta?</a>
-        </form>
-        <div id="loginMessage" class="mt-4 text-center hidden"></div>
+    <div class="container d-flex justify-content-center align-items-center vh-100 w-50">
+        <div class="bg-secondary p-4 rounded shadow" style="max-width: 28rem;">
+            <h2 class="text-center text-dark mb-4">Inicia sesión</h2>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="email" class="form-label text-muted">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label text-muted ">Contraseña</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-success w-100 mb-3">Iniciar sesión</button>
+                <div class="text-center">
+                    <a href="./reguistrarte.html" class="text-primary">¿Aún no tienes cuenta?</a>
+                </div>
+            </form>
+            <div id="loginMessage" class="mt-4 text-center d-none"></div>
+        </div>
     </div>
+    
 </body>
 </html>
