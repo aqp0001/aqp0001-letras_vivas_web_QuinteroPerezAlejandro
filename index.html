@@ -6,6 +6,39 @@
     <title>Biblioteca Letras Vivas</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" href="Imagenes/Logotipo.ico" type="image/x-icon">
+    <style>
+        header {
+            animation: slideDownFadeIn 1.5s ease-out forwards;
+            opacity: 0;
+        }
+        
+        @keyframes slideDownFadeIn {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .redes-sociales a img:hover {
+            animation: rotateUp 0.6s ease-in-out forwards;
+        }
+        
+        @keyframes rotateUp {
+            0% {
+                transform: rotate(0) translateY(0);
+            }
+            50% {
+                transform: rotate(-15deg) translateY(-5px);
+            }
+            100% {
+                transform: rotate(0) translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
     <header>

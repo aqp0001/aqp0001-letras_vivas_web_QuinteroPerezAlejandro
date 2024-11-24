@@ -104,7 +104,7 @@ section {
 }
 
 .reserva-detalles p {
-    margin-bottom: 8px;
+    margin-bottom: 20px;
     line-height: 1.5;
 }
 
@@ -112,8 +112,10 @@ section {
     color: #ff4500;
     font-size: 1rem;
     font-weight: bold;
-    margin-top: 10px;
+    margin-bottom: 10%;
+    width: 30%;
 }
+
 
 .reserva-precio {
     color: #006600;
