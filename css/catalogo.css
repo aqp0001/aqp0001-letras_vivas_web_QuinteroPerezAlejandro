@@ -74,26 +74,53 @@ section {
 .reserva-contenedor {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #f9f9f9;
+    align-items: flex-start;
+    background-color: #ffffff;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .reserva-imagen img {
-    max-width: 100%;
+    max-width: 150px;
     border-radius: 5px;
 }
 
 .reserva-detalles {
+    flex-grow: 1;
     margin-left: 20px;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.reserva-detalles h3 {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.reserva-detalles p {
+    margin-bottom: 8px;
+    line-height: 1.5;
 }
 
 .reserva-tiempo {
-    margin-right: 50px;
-    margin-bottom: 200px;
-    white-space: nowrap; 
+    color: #ff4500;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.reserva-precio {
+    color: #006600;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: right;
 }
 
 
