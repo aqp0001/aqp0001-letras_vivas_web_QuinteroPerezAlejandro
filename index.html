@@ -22,6 +22,28 @@
                 opacity: 1;
             }
         }
+
+        .carousel-item {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+          }
+          
+          .carousel-item.active {
+            opacity: 1;
+            animation: aparecerGradualmente 1.5s ease-in-out;
+          }
+          
+          @keyframes aparecerGradualmente {
+            from {
+              transform: scale(0.95); 
+              opacity: 0;            
+            }
+            to {
+              transform: scale(1);
+              opacity: 1;
+            }
+          }
+          
         
         .redes-sociales a img:hover {
             animation: rotar 0.6s ease-in-out forwards;
