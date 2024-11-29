@@ -6,10 +6,20 @@
     <title>Formulario tarjeta de crédito</title>
     <link rel="stylesheet" href="./css/pagar.css">
     <link rel="icon" href="Imagenes/Logotipo.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="Imagenes/Logotipo.png" alt="" width="100px" >
+        <img src="Imagenes/Logotipo.png" alt="" width="100px">
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -28,45 +38,143 @@
         </div>
     </header>
 
-    <div class="form-container">
-        <h2 class="title">Información de la tarjeta de crédito</h2>
-        <form id="creditCardForm" class="form">
-            <div class="form-group">
-                <label for="cardNumber">Número de tarjeta</label>
-                <input type="text" id="cardNumber" name="cardNumber" required placeholder="1234 5678 9012 3456">
-            </div>
-            <div class="form-group">
-                <label for="expirationMonth">Mes de expiración</label>
-                <select id="expirationMonth" name="expirationMonth" required>
-                    <option value="">MM</option>
-                    <option value="01">01</option>
-                    <option value="02">02</option>
-                    <option value="03">03</option>
-                    <option value="04">04</option>
-                    <option value="05">05</option>
-                    <option value="06">06</option>
-                    <option value="07">07</option>
-                    <option value="08">08</option>
-                    <option value="09">09</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="expirationYear">Año de expiración</label>
-                <select id="expirationYear" name="expirationYear" required>
-                    <option value="">YYYY</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" required placeholder="123">
-            </div>
-            <button type="submit" class="submit-button">Enviar pago</button>
-        </form>
-        <div id="paymentMessage" class="payment-message hidden"></div>
-    </div>
+    <body class="bg-body-tertiary">
+        <div class="container">
+            <main>
+                <div class="row g-5">
+                    <div class="col-md-5 col-lg-4 order-md-last">
+                        <div class="form-container">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-primary">Tu carrito</span>
+                                <span class="badge bg-primary rounded-pill">3</span>
+                            </h4>
+                            <ul class="list-group mb-3">
+                                <li class="list-group-item d-flex justify-content-between lh-sm">
+                                    <div>
+                                        <h6 class="my-0">Producto 1</h6>
+                                        <small class="text-body-secondary">Breve descripción</small>
+                                    </div>
+                                    <span class="text-body-secondary">$12</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between lh-sm">
+                                    <div>
+                                        <h6 class="my-0">Producto 2</h6>
+                                        <small class="text-body-secondary">Breve descripción</small>
+                                    </div>
+                                    <span class="text-body-secondary">$8</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between lh-sm">
+                                    <div>
+                                        <h6 class="my-0">Producto 3</h6>
+                                        <small class="text-body-secondary">Breve descripción</small>
+                                    </div>
+                                    <span class="text-body-secondary">-$5</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                                    <div class="text-success">
+                                        <h6 class="my-0">Código promocional</h6>
+                                        <small>EJEMPLOCODE</small>
+                                    </div>
+                                    <span class="text-success">$5</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between">
+                                    <span>Total (USD)</span>
+                                    <strong>$20</strong>
+                                </li>
+                            </ul>
+
+                            <form class="card p-2">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Código promocional">
+                                    <button type="submit" class="btn btn-secondary">Canjear</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 col-lg-8">
+                        <div class="form-container">
+                            <h4 class="mb-3">Información de facturación</h4>
+                            <form class="needs-validation" novalidate="">
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <label for="firstName" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                        <div class="invalid-feedback">Se requiere un nombre válido.</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="lastName" class="form-label">Apellido</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                        <div class="invalid-feedback">Se requiere un apellido válido.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">Correo electrónico</label>
+                                        <input type="email" class="form-control" id="email" placeholder="tu@ejemplo.com">
+                                        <div class="invalid-feedback">Proporciona un correo electrónico válido.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="address" class="form-label">Dirección</label>
+                                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                                        <div class="invalid-feedback">Proporciona una dirección válida.</div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <label for="country" class="form-label">País</label>
+                                        <select class="form-select" id="country" required>
+                                            <option value="">Elige...</option>
+                                            <option>España</option>
+                                        </select>
+                                        <div class="invalid-feedback">Selecciona un país válido.</div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="state" class="form-label">Provincia</label>
+                                        <select class="form-select" id="state" required>
+                                            <option value="">Elige...</option>
+                                            <option>Cordoba</option>
+                                        </select>
+                                        <div class="invalid-feedback">Selecciona un estado válido.</div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="zip" class="form-label">Código postal</label>
+                                        <input type="text" class="form-control" id="zip" required>
+                                        <div class="invalid-feedback">Se requiere un código postal.</div>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <h4 class="mb-3">Pago</h4>
+                                <div class="row gy-3">
+                                    <div class="col-md-6">
+                                        <label for="cc-name" class="form-label">Nombre en la tarjeta</label>
+                                        <input type="text" class="form-control" id="cc-name" required>
+                                        <div class="invalid-feedback">Se requiere el nombre en la tarjeta.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="cc-number" class="form-label">Número de tarjeta</label>
+                                        <input type="text" class="form-control" id="cc-number" required>
+                                        <div class="invalid-feedback">Se requiere el número de tarjeta.</div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="cc-expiration" class="form-label">Expiración</label>
+                                        <input type="text" class="form-control" id="cc-expiration" placeholder="MM/AA" required>
+                                        <div class="invalid-feedback">Se requiere la fecha de expiración.</div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="cc-cvv" class="form-label">CVV</label>
+                                        <input type="text" class="form-control" id="cc-cvv" required>
+                                        <div class="invalid-feedback">Se requiere el CVV.</div>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+                                <button class="w-100 btn btn-primary btn-lg" type="submit">Realizar pago</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
 
     <footer>
         <p>© 2024 - 2023 Letras Vivas</p>
