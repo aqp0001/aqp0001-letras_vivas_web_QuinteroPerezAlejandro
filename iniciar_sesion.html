@@ -6,8 +6,7 @@
     <title>Formulario Iniciar Sesión</title>
     
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
     <style>
         body {
@@ -20,7 +19,6 @@
     </style>
 </head>
 <body>
-
     <div class="container d-flex justify-content-center align-items-center vh-100 w-50">
         <div class="bg-secondary p-4 rounded shadow" style="max-width: 28rem;">
             <h2 class="text-center text-dark mb-4">Inicia sesión</h2>
@@ -30,7 +28,7 @@
                     <input type="email" id="email" name="email" class="form-control" required>
                 </div>
                 <div class="mb-3">
-                    <label for="password" class="form-label text-muted ">Contraseña</label>
+                    <label for="password" class="form-label text-muted">Contraseña</label>
                     <input type="password" id="password" name="password" class="form-control" required>
                 </div>
                 <button type="submit" class="btn btn-success w-100 mb-3">Iniciar sesión</button>
@@ -38,9 +36,33 @@
                     <a href="./reguistrarte.html" class="text-primary">¿Aún no tienes cuenta?</a>
                 </div>
             </form>
-            <div id="loginMessage" class="mt-4 text-center d-none"></div>
         </div>
     </div>
     
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Inicio de sesión exitoso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¡Has iniciado sesión correctamente!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            var loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+            loginModal.show();
+        });
+    </script>
 </body>
 </html>
