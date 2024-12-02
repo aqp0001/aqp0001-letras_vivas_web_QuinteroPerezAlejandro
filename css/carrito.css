@@ -94,7 +94,10 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 300px;
+    border-radius: 8px;
+    width: 60%;
+    background-color: #E0E0E0;
+    padding-bottom: 20%;
 }
 
 .pedido {
@@ -104,7 +107,8 @@ footer {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 10px;
-    background-color: #f5f5f5;
+    width: 200px;
+    background-color: #a7a4a4;
 }
 
 .pedido img {
