@@ -6,10 +6,11 @@
     <title>Promociones - Biblioteca Letras Vivas</title>
     <link rel="stylesheet" href="./css/promociones.css">
     <link rel="icon" href="Imagenes/Logotipo.ico" type="image/x-icon">
+    <script defer src="./js/promociones.js"></script>
 </head>
 <body>
     <header>
-        <img src="Imagenes/Logotipo.png" alt="" width="100px">
+        <img src="Imagenes/Logotipo.png" alt="Logotipo Biblioteca Letras Vivas" width="100px">
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -23,21 +24,21 @@
 
     <main>
         <h1>Promociones Especiales</h1>
-        <div class="promo-card">
-            <img src="Imagenes/promo1.jpg" alt="Promoción 1">
+        <div class="promo-card" data-descuento="20">
+            <img src="./Imagenes/descuento1.png" alt="Promoción 1">
             <div>
                 <h3>Descuento en Libros Clásicos</h3>
-                <p>Aprovecha un descuento del 20% en nuestra colección de libros clásicos. ¡No te lo pierdas!</p>
-                <a href="catalogo.html" class="btn">Ver más</a>
+                <p>Aprovecha un descuento del <strong>20%</strong> en nuestra colección de libros clásicos. ¡No te lo pierdas!</p>
+                <button class="btn aplicar-descuento" data-genero="clásicos">Aplicar al catálogo</button>
             </div>
         </div>
         
-        <div class="promo-card">
-            <img src="Imagenes/promo2.jpg" alt="Promoción 2">
+        <div class="promo-card" data-descuento="15">
+            <img src="Imagenes/descuento2.png" alt="Promoción 2">
             <div>
-                <h3>Lectura Gratuita de Ebooks</h3>
-                <p>Disfruta de acceso gratuito a nuestra colección de ebooks durante el mes de diciembre.</p>
-                <a href="catalogo.html" class="btn">Ver más</a>
+                <h3>Descuento en Libros de Suspenso</h3>
+                <p>Aprovecha un descuento del <strong>15%</strong> en nuestra colección de libros de suspenso.</p>
+                <button class="btn aplicar-descuento" data-genero="suspenso">Aplicar al catálogo</button>
             </div>
         </div>
     </main>
@@ -51,5 +52,6 @@
             <a href="#"><img src="Imagenes/twitter.png" alt="Twitter" width="30px"></a>
         </div>
     </footer>
+    <script src="./promociones.js"></script>
 </body>
 </html>
