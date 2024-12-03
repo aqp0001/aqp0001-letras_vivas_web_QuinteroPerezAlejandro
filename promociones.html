@@ -4,43 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promociones - Biblioteca Letras Vivas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/promociones.css">
     <link rel="icon" href="Imagenes/Logotipo.ico" type="image/x-icon">
 </head>
-<body>
-    <header>
-        <img src="Imagenes/Logotipo.png" alt="Logotipo Biblioteca Letras Vivas" width="100px">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="sala_estudiante.html">Sala del estudiante</a></li>
-                <li><a href="dia_lector.html">Día lector</a></li>
-                <li><a href="promociones.html">Promociones</a></li>
-            </ul>
-        </nav>
+<body class="bg-light">
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="Imagenes/Logotipo.png" alt="Logotipo Biblioteca Letras Vivas" width="100">
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Inicio</a></li>
+                    <li class="nav-item"><a href="catalogo.html" class="nav-link text-white">Catálogo</a></li>
+                    <li class="nav-item"><a href="sala_estudiante.html" class="nav-link text-white">Sala del estudiante</a></li>
+                    <li class="nav-item"><a href="dia_lector.html" class="nav-link text-white">Día lector</a></li>
+                    <li class="nav-item"><a href="promociones.html" class="nav-link text-white">Promociones</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h1>Promociones Especiales</h1>
-        <div class="promo-card" data-descuento="20">
-            <img src="./Imagenes/descuento1.png" alt="Promoción 1">
-            <div>
-                <h3>Descuento en Libros Clásicos</h3>
-                <p>Aprovecha un descuento del <strong>20%</strong> en nuestra colección de libros clásicos. ¡No te lo pierdas!</p>
-                <h4><p>Codigo promocional: <span class="codigo">LetrasVivasPremium</span></p></h4>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">Promociones Especiales</h1>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="./Imagenes/descuento1.png" class="card-img-top" alt="Promoción 1">
+                    <div class="card-body">
+                        <h3 class="card-title">Descuento en Libros Clásicos</h3>
+                        <p class="card-text">Aprovecha un descuento del <strong>20%</strong> en nuestra colección de libros clásicos. ¡No te lo pierdas!</p>
+                        <p><strong>Código promocional:</strong> <span class="badge bg-primary">LetrasVivasPremium</span></p>
+                    </div>
+                </div>
             </div>
-        </div>
-        
-        <div class="promo-card" data-descuento="15">
-            <img src="Imagenes/descuento2.png" alt="Promoción 2">
-            <div>
-                <h3>Descuento en Libros de Suspenso</h3>
-                <p>Aprovecha un descuento del <strong>15%</strong> en nuestra colección de libros de suspenso.</p>
-                <h4><p>Codigo promocional: <span class="codigo">LetrasVivasEstandar</span></p></h4>
+
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="Imagenes/descuento2.png" class="card-img-top" alt="Promoción 2">
+                    <div class="card-body">
+                        <h3 class="card-title">Descuento en Libros de Suspenso</h3>
+                        <p class="card-text">Aprovecha un descuento del <strong>15%</strong> en nuestra colección de libros de suspenso.</p>
+                        <p><strong>Código promocional:</strong> <span class="badge bg-primary">LetrasVivasEstandar</span></p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+
 
     <footer>
         <p>© 2024 - 2023 Letras Vivas</p>
@@ -64,6 +75,8 @@
         </div>
         <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Letras Vivas</span> by <span property="cc:attributionName">Alejandro Quintero</span> is marked with <a href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1" alt=""></a></p>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./promociones.js"></script>
 </body>
 </html>

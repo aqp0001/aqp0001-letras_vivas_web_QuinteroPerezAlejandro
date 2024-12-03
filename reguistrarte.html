@@ -13,7 +13,7 @@
 <body class="bg-light d-flex align-items-center justify-content-center min-vh-100 m-0" style="background-image: url('../Imagenes/reguistrarte.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
     <div class="login-container bg-secondary p-4 rounded shadow-sm" style="max-width: 28rem; width: 100%;">
         <h2 class="text-center text-dark mb-4">Regístrate</h2>
-        <form id="registrationForm" class="space-y-4">
+        <form id="registrationForm">
             <div class="mb-3">
                 <label for="fullName" class="form-label">Nombre completo</label>
                 <input type="text" id="fullName" name="fullName" required class="form-control">
@@ -31,13 +31,36 @@
                 <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" class="form-control">
             </div>
             <div class="mb-3 text-center">
-                <button type="submit" class="btn btn-success w-100">
-                    Regístrate
-                </button>
+                <button type="submit" class="btn btn-success w-100">Regístrate</button>
             </div>
             <a href="./iniciar_sesion.html" class="text-decoration-none text-primary d-block text-center">¿Ya tienes cuenta?</a>
         </form>
-        <div id="registrationMessage" class="mt-4 text-center d-none"></div>
     </div>
+
+    <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registrationModalLabel">Registro exitoso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¡Te has registrado correctamente! Ahora puedes iniciar sesión.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var registrationModal = new bootstrap.Modal(document.getElementById('registrationModal'));
+            registrationModal.show();
+        });
+    </script>
 </body>
 </html>
