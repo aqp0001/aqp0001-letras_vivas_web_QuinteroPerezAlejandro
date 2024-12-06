@@ -1,0 +1,21 @@
+body {
+    font-family: $font-family;
+    line-height: $line-height;
+    background-color: $background-color;
+  }
+  
+  h1, h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .p-derecha {
+    text-align: right;
+    margin-top: 100px;
+  }
+  
+  .p-izquierda {
+    text-align: left;
+    margin-top: 100px;
+  }
+  
