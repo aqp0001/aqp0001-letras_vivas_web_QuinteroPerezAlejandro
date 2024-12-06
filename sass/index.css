@@ -16,24 +16,28 @@ h1, h2 {
 header {
   animation: desplazamiento 1.5s ease-out forwards;
   opacity: 0;
+  background-color: #3b3b3b;
+  color: #ffffff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @keyframes desplazamiento {
   0% {
-      transform: translateY(-50px);
-      opacity: 0;
+    transform: translateY(-50px);
+    opacity: 0;
   }
   100% {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
-
 .carousel-item {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
-
 .carousel-item.active {
   opacity: 1;
   animation: aparecerGradualmente 1.5s ease-in-out;
@@ -41,32 +45,29 @@ header {
 
 @keyframes aparecerGradualmente {
   from {
-    transform: scale(0.95); 
-    opacity: 0;            
+    transform: scale(0.95);
+    opacity: 0;
   }
   to {
     transform: scale(1);
     opacity: 1;
   }
 }
-
-
 .redes-sociales a img:hover {
   animation: rotar 0.6s ease-in-out forwards;
 }
 
 @keyframes rotar {
   0% {
-      transform: rotate(0) translateY(0);
+    transform: rotate(0) translateY(0);
   }
   50% {
-      transform: rotate(-15deg) translateY(-5px);
+    transform: rotate(-15deg) translateY(-5px);
   }
   100% {
-      transform: rotate(0) translateY(0);
+    transform: rotate(0) translateY(0);
   }
 }
-
 .p-derecha {
   text-align: right;
   margin-top: 100px;
@@ -85,21 +86,11 @@ header {
   text-align: left;
 }
 
-header {
-  background-color: #3b3b3b;
-  color: #ffffff;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 nav {
   flex-grow: 1;
   display: flex;
   justify-content: center;
 }
-
 nav ul {
   list-style: none;
   display: flex;
@@ -108,12 +99,10 @@ nav ul {
   justify-content: center;
   align-items: center;
 }
-
 nav ul li {
   margin: 0 15px;
 }
-
-nav a {
+nav ul a {
   color: #ffffff;
   text-decoration: none;
 }
@@ -123,7 +112,6 @@ nav a {
   justify-content: space-between;
   margin-top: 10px;
 }
-
 .servicios-icons img {
   width: 30%;
   border-radius: 5px;
@@ -138,8 +126,7 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
-.redes-sociales {
+footer .redes-sociales {
   margin-top: 10px;
 }
 
@@ -154,9 +141,13 @@ section {
   color: #333;
   text-align: center;
 }
-
-.section-color {
+section.section-color {
   background-color: #e5e5e5;
+}
+section::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .btn-formulario {
@@ -171,7 +162,6 @@ section {
   margin-top: 10px;
   text-decoration: none;
 }
-
 .btn-formulario:hover {
   background-color: #218838;
 }
@@ -186,14 +176,12 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
 }
-
-.reserva-imagen img {
+.reserva-contenedor .reserva-imagen img {
   max-width: 150px;
   border-radius: 5px;
   margin-right: 20px;
 }
-
-.reserva-detalles {
+.reserva-contenedor .reserva-detalles {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -202,15 +190,8 @@ section {
   height: 100%;
   text-align: left;
 }
-
-.reserva-detalles p {
+.reserva-contenedor .reserva-detalles p {
   margin: 5px 0;
-}
-
-section::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 .imagen-izquierda {
@@ -241,13 +222,11 @@ section::after {
     flex-direction: column;
     align-items: center;
   }
-
   .servicios-icons img {
     width: 80%;
     margin-bottom: 10px;
   }
 }
-
 .li {
   text-align: center;
-}
+}/*# sourceMappingURL=index.css.map */

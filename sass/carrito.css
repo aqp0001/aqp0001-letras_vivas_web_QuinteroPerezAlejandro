@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  background-image: url("../Imagenes/carrito_fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: #3b3b3b;
+  color: #ffffff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.user-cart {
+  display: flex;
+  align-items: center;
+}
+
+.user-cart a {
+  color: #ffffff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #3b3b3b;
+  color: #ffffff;
+  text-align: center;
+  padding: 63px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.redes-sociales {
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .servicios-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .servicios-icons img {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}
+.li {
+  text-align: center;
+}
+
+.carrito-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.pedido-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 8px;
+  width: 60%;
+  background-color: #E0E0E0;
+  padding-bottom: 20%;
+}
+
+.pedido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 250px;
+  background-color: #a7a4a4;
+}
+
+.pedido img {
+  width: 70px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.pedido-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.pedido-texto {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pedido-confirmado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: green;
+  font-weight: bold;
+}
+
+.subtotal-container {
+  background-color: #E0E0E0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.subtotal-container h3 {
+  margin: 0;
+}
+
+#pagar-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#pagar-btn:hover {
+  background-color: #218838;
+}/*# sourceMappingURL=carrito.css.map */

@@ -4,63 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Letras Vivas</title>
-    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="./sass/index.css">
     <link rel="icon" href="Imagenes/Logotipo.ico" type="image/x-icon">
-    <style>
-        header {
-            animation: desplazamiento 1.5s ease-out forwards;
-            opacity: 0;
-        }
-        
-        @keyframes desplazamiento {
-            0% {
-                transform: translateY(-50px);
-                opacity: 0;
-            }
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .carousel-item {
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-          }
-          
-          .carousel-item.active {
-            opacity: 1;
-            animation: aparecerGradualmente 1.5s ease-in-out;
-          }
-          
-          @keyframes aparecerGradualmente {
-            from {
-              transform: scale(0.95); 
-              opacity: 0;            
-            }
-            to {
-              transform: scale(1);
-              opacity: 1;
-            }
-          }
-          
-        
-        .redes-sociales a img:hover {
-            animation: rotar 0.6s ease-in-out forwards;
-        }
-        
-        @keyframes rotar {
-            0% {
-                transform: rotate(0) translateY(0);
-            }
-            50% {
-                transform: rotate(-15deg) translateY(-5px);
-            }
-            100% {
-                transform: rotate(0) translateY(0);
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -91,13 +36,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="carousel-image" src="./Imagenes/carusel1.webp" alt="Primera imagen">
+                    <img class="carousel-image" src="./Imagenes/carusel1.webp" alt="Primera imagen" width="100%">
                 </div>
                 <div class="carousel-item">
-                    <img class="carousel-image" src="./Imagenes/carusel2.webp" alt="Segunda imagen">
+                    <img class="carousel-image" src="./Imagenes/carusel2.webp" alt="Segunda imagen" width="100%">
                 </div>
                 <div class="carousel-item">
-                    <img class="carousel-image" src="./Imagenes/carusel3.png" alt="Tercera imagen">
+                    <img class="carousel-image" src="./Imagenes/carusel3.png" alt="Tercera imagen" width="100%">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
