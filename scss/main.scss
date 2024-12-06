@@ -1,5 +1,9 @@
-@use "utils/variables";
+@use "utils/variables" as *;
 @use "utils/mixins";
 @use "base/reset";
-@use "base/typography";
+@use "base/_typography";
 @use "layout/header";
+@use "components/buttons";
+@use "components/reservas";
+@use "layout/_footer";
+@use "pages/_sections";

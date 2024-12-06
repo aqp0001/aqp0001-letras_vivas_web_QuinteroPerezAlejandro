@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 .btn-formulario {
     background-color: $btn-bg-color;
     color: $secondary-color;
