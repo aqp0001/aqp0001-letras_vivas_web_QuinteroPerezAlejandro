@@ -19,8 +19,8 @@
     </style>
 </head>
 <body>
-    <div class="container d-flex justify-content-center align-items-center vh-100 w-50">
-        <div class="bg-secondary p-4 rounded shadow" style="max-width: 28rem;">
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="bg-secondary p-4 rounded shadow w-100" style="max-width: 28rem;">
             <h2 class="text-center text-dark mb-4">Inicia sesión</h2>
             <form id="loginForm">
                 <div class="mb-3">
@@ -39,6 +39,7 @@
         </div>
     </div>
     
+
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -55,6 +56,43 @@
             </div>
         </div>
     </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>© 2024 - 2023 Letras Vivas</p>
+        <p>Enlaces: 
+            <a href="index.html">Inicio</a>, 
+            <a href="catalogo.html" >Catálogo</a>, 
+            <a href="dia_lector.html" >Día lector</a>, 
+            <a href="sala_estudiante.html">Sala del estudiante</a>
+        </p>
+        <p>Teléfono: 745249617 | Email: letrasvivas@gmail.com | Dirección: Calle Montalbán 1, 28014 Madrid</p>
+        <div class="redes-sociales">
+            <p>Redes sociales: 
+                <a href="#" class="text-white">
+                    <img src="Imagenes/instagram.png" width="30" class="img-fluid">
+                </a>
+                <a href="#" class="text-white">
+                    <img src="Imagenes/facebook.png" width="30" class="img-fluid">
+                </a>
+                <a href="#" class="text-white">
+                    <img src="Imagenes/whatsapp.png" width="30" class="img-fluid">
+                </a>
+                <a href="#" class="text-white">
+                    <img src="Imagenes/twiter.png" width="30" class="img-fluid">
+                </a>
+            </p>
+        </div>
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+            <span property="dct:title">Letras Vivas</span> by 
+            <span property="cc:attributionName">Alejandro Quintero</span> 
+            is marked with <a href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">
+                CC0 1.0 
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1" alt="" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;">
+            </a>
+        </p>
+    </footer>
+    
 
     <script>
         document.getElementById('loginForm').addEventListener('submit', function(event) {
